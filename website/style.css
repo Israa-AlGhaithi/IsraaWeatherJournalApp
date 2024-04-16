@@ -1,0 +1,342 @@
+body{
+    background-image: url(assets/sunny.jpg);
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* for smooth background image change */
+.smooth-transition {
+    transition: background-image 0.5s ease-in;
+}
+
+
+#app{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    justify-content: left;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 0.02rem 0.04rem 0.3rem #444;
+}
+
+
+.copyright {
+    font-size: xx-small;
+    font-weight: 600;
+    color: #733236;
+}
+
+
+.copyright > em {
+    color: crimson;
+}
+
+.error-message {
+    display: none;
+    font-size: 0.7em;
+    color: red;
+    background-color: white;
+    margin: 0.5rem;
+    text-align: center;
+    width: 12rem;
+    border-radius: 1rem;
+}
+
+.entry{
+    display: none;
+    flex-direction: column;
+    width: 90vw;
+    justify-content: left;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 0.02rem 0.04rem 0.3rem #444;
+}
+
+#icon {
+    text-align: center;
+}
+
+#weather {
+    text-align: center;
+    margin: 0.5em;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: yellow;
+    text-decoration: underline;
+}
+
+#date{
+    margin-left: 0.5em;
+    font-size: 0.5em;
+    font-weight: 700;
+}
+
+#temp{
+    margin-left: 0.7rem;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+    color: chocolate;
+}
+
+.holder-feeling {
+    background: rgba(59, 74, 107, .4);
+    margin: 0.7rem;
+}
+
+#content{
+    display: none;
+    text-align: justify;
+    margin: 0.5rem;
+    font-size: 0.9em;
+    color: white;
+
+}
+
+#collapsible {
+    border-radius: 1rem;
+    background: rgba(20, 33, 61, 0.6);
+    min-width: 16rem;
+    font-weight: 700;
+    margin: 0.7rem;
+    text-shadow: white;
+    cursor: pointer;
+}
+
+
+.title{
+    font-family: cursive;
+    color: whitesmoke;
+    margin: 0.3rem;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display: block;
+    color: black;
+    font-size: 0.9em;
+    margin: 0.5rem;
+    font-family: cursive;
+}
+
+input{
+    display: block;
+    height: 3rem;
+    width: 12rem;
+    margin: 0.5rem;
+    background: rgba(20, 33, 61, 0.6);
+    color: white;
+    font-size: 0.9em;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: 1rem;
+}
+
+#generate{
+    min-width: 16rem;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #14213d;
+    font-weight: 700;
+    font-size: 0.9em;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    box-shadow: 2px 4px 5px #444;
+    cursor: pointer;
+}
+
+
+h1{
+    font-size: 1.1em;
+    text-align: center;
+    color: crimson;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+textarea{
+    background: rgba(20, 33, 61, 0.6);
+    color: white;
+    font-size: 0.9em;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    width: 16.5rem;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8em;
+
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8em;
+
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:  white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8em;
+}
+
+
+/* TODO: for likely as a Tablet */
+@media (min-width: 540px) and (max-width:769px){
+
+    body {
+        background-repeat: repeat;
+    }
+
+    #app{
+        margin: 2rem;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .entry{
+        margin: 2rem;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6em;
+    }
+
+    #temp {
+        font-size: 2em;
+    }
+
+    #date{
+        font-size: 0.7em;
+    }
+
+    #content{
+        font-size: 1em;
+    }
+
+    .collapsible {
+        min-width: 16.5rem;
+        font-size: 0.7em;
+        height: 1.9rem;
+    }
+
+}
+
+
+
+/* TODO: If screen between 800px to 920px */
+@media (min-width: 800px) and (max-width: 920px) {
+
+    h1{
+        font-size: 1.3em;
+    }
+
+    #app{
+        margin: 4rem;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0.2rem 0.4rem 0.8rem #444;
+
+    }
+
+    .entry{
+        margin: 4rem;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0.2rem 0.4rem 0.8rem #444;
+        font-size: 1.6em;
+    }
+
+    #temp {
+        font-size: 2em;
+    }
+
+    #date{
+        font-size: 0.7em;
+    }
+
+    #content{
+        font-size: 1em;
+    }
+
+    .collapsible {
+        min-width: 16.5rem;
+        font-size: 0.7em;
+        height: 1.9rem;
+    }
+}
+
+
+
+/* TODO: If screen is wide (Laptop & desktop ) and above */
+@media(min-width: 921px){
+
+    body {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-rows: minmax(150px, auto);
+        gap: 0.5em;
+    }
+
+    h1{
+        font-size: 1.3em;
+    }
+
+    #app{
+        margin: 0.9rem;
+        width: 40vw;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0.2rem 0.4rem 0.8rem #444;
+
+    }
+
+    .entry{
+        margin: 0.9rem;
+        width: 40vw;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0.2rem 0.4rem 0.8rem #444;
+        font-size: 1.6em;
+    }
+
+    #temp {
+        font-size: 2em;
+    }
+
+    #date{
+        font-size: 0.7em;
+    }
+
+    #content{
+        font-size: 1em;
+    }
+
+    .holder-feeling {
+       text-align: center;
+    }
+
+    .collapsible {
+        min-width: 16.5rem;
+        font-size: 0.7em;
+        height: 1.9rem;
+    }
+
+}
