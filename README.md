@@ -3,6 +3,7 @@
 ## Table of Content
 
 - [Description](#description)
+- [Website Preview](#website-preview)
 - [Technologies](#technologies)
 - [Usage](#usage)
 - [Development](#development)
@@ -16,6 +17,28 @@
 [Back to top](#table-of-content)
 
 This project is an asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App. This project is using API credential Key from OpenWeatherMap website, which allows using and getting data and other functions. In addition, using Node.js helps to create an environment that allows installing Express package to work as a local server. This Express gives easy access to setup server port and to handle HTTP routes and requests.
+
+## Website Preview
+
+[Back to top](#table-of-content)
+
+![The First View of the Website Image](app-preview1.png "The First View of the Website")
+
+***
+
+Then the background image will change according to the weather main status and if it's day or night.
+
+![Overcast Clouds Image at Night](app-preview4.png)
+
+***
+
+![Clear Sky Day Image](app-preview3.png)
+
+***
+
+![Clear Sky Image at Night](app-preview2.png)
+
+***
 
 ## Technologies
 
