@@ -52,7 +52,7 @@ Follow the steps below to get started with this project’s development environm
 
 1. First, download and install Node.js from [Node](https://nodejs.org/en/download/).
 2. Second, choose your favorite code editor for example [Visual Studio Code](https://code.visualstudio.com/).
-3. Clone this repository: [Weather-Journal App project repo]().
+3. Clone this repository: [Weather-Journal App project repo](https://github.com/Israa-AlGhaithi/IsraaWeatherJournalApp-Udacity-project.git).
 4. Open the project in your preferred text editor or IDE.
 5. Install Express with the npm install command: $ npm install express
 6. Install all the dependencies.
